@@ -1,0 +1,63 @@
+.banner {
+  background-image: url('/src/CabinPhotos/BigBearBanner/ResortBanner.jpg');
+  height: 50vh;
+
+    background-position: bottom; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.banner__info {
+    background-color: black;
+    color: white;
+    padding: 4vh 20px 3vh;
+    width: 20%;
+    min-width: 300px;
+    max-width: 400px;
+    max-height: 200px;
+    border-radius: 20px;
+    margin: .5vh .5vw;
+}
+
+.banner__search {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__searchButton {
+  background-color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  color: #ff7779 !important;
+
+}
+
+.banner__info > button {
+    background-color: #ff7779;
+    color: white;
+    text-transform: inherit;
+    margin-top: 15px;
+    font-weight: 600;
+    margin-left: .75vw;
+}
+
+.banner__info > button:hover {
+    background-color: white;
+    color: #ff7779;
+  }
+
+
+.banner__info > h1 {
+    margin-left: .75vw;
+}
+
+.banner__info > h4 {
+    margin-left: .75vw;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.banner__info > h5 {
+    margin-top: 10px;
+}
