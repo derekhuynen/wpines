@@ -5,6 +5,7 @@
   "dependencies": {
     "@iconify/icons-ant-design": "^1.1.0",
     "@iconify/icons-bi": "^1.1.5",
+    "@iconify/icons-ic": "^1.1.8",
     "@iconify/icons-medical-icon": "^1.1.0",
     "@iconify/react": "^1.1.4",
     "@material-ui/core": "^4.12.3",
@@ -43,7 +44,6 @@
     ]
   },
   "devDependencies": {
-    "@iconify/icons-ic": "^1.1.8",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "react-router-dom": "^5.2.0"
