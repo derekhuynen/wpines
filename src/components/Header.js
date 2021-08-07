@@ -16,10 +16,6 @@ function Header() {
                 />
             </Link>
 
-            <div className='header__center'>
-                <input type="text" />
-                <SearchIcon />
-            </div>
         </div>
     )
 }
