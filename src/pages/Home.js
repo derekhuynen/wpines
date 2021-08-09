@@ -31,16 +31,18 @@ function Home() {
                 <Card
                     image1={GoldRush720_1}
                     title="Current Events"
+                    link= "/"
                     icon={<Icon icon={calendarEvent} width="20" height="20" inline={true}/>}
                 />
                 <Card
-                    image1= {Hiking720}
+                    image1= {Village720}
                     title="Things To Do"
                     icon={<Icon icon={baselineHiking} width="20" height="20" inline={true}/>}
                 />
                 <Card
-                    image1={Village720}
+                    image1={Hiking720}
                     title="Restaurants"
+                    link= "/search"
                     icon={<Icon icon={iRestaurant} width="20" height="20" inline={true}/>}
                 />
             </div>
@@ -87,12 +89,12 @@ function Home() {
                 />
                 <HouseCard
                     image1={GoldRush720_1}
-                    title="Gold Rush Cabin"
+                    title="Gold Rush Lodge"
                     guests= "14"
                     bedrooms= "3"
                     bathrooms= "2.5"
-                    license="2021-1234"
-                    link="https://airbnb.com/h/treehutte"/>
+                    license="2020-0381"
+                    link="https://abnb.me/i2RouaAyzib"/>
             </div>
         </div>
     )

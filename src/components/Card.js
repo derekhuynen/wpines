@@ -1,10 +1,13 @@
 import React from 'react';
 import '../css/Card.css'
+import { useHistory } from "react-router-dom";
 
-function HouseCard({image1, title, icon}) {
+function HouseCard({image1, title, icon, link}) {
+    const history = useHistory();
+
 
     return (
-        <div className='card' >
+        <div className='card' onClick={() => history.push(link)}>
             <img src={image1} alt=""/>
             <div className="card__info">
                 <div className={'card__title'}>
