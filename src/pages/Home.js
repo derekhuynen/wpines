@@ -23,6 +23,8 @@ import iRestaurant from '@iconify/icons-medical-icon/i-restaurant';
 
 
 function Home() {
+
+
     return (
         <div className='home'>
             <Banner/>
