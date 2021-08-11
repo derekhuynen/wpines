@@ -21,9 +21,11 @@
     display: flex;
     flex: 100%;
     flex-flow: row;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 200px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-bottom: 1px solid lightgray;
 }
 
@@ -62,9 +64,15 @@
 
 @media screen and (max-width: 700px) {
 
+    .row{
+        height: auto;
+    }
     .row > img {
         display: none;
+
     }
+
+
 
 
 }
