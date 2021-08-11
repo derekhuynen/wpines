@@ -48,6 +48,23 @@
     position: relative;
 }
 
+.rating  {
+    display: inline;
+    float: right;
+    position: relative;
+    top: 7px;
+}
+
+.rating > h5 {
+    display: inline;
+    position: relative;
+    top: -7px;
+}
+
+.infoTop > h2{
+    display: inline;
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -70,12 +87,11 @@
     }
     .row > img {
         flex: 100%;
-        flex-wrap: wrap;
         margin-bottom: 10px;
     }
 
     .rowInfo{
-        flex-wrap: wrap;
+
     }
 
 
