@@ -8,7 +8,7 @@
 
 .left {
     flex: 100%;
-    min-width: 700px;
+    min-width: 730px;
     max-width: 1000px;
 }
 
@@ -30,11 +30,12 @@
 }
 
 
-
 .rowInfo {
     flex: auto;
     flex-direction: column;
     padding-left: 10px;
+
+    position: relative;
 }
 
 .row > img {
@@ -48,21 +49,97 @@
     position: relative;
 }
 
-.rating  {
+.rowInfo > h4 {
+    font-size: 10px;
+    font-weight: 500;
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+}
+
+
+/*------------House stuff------------ */
+.infoTop  {
+
+}
+
+
+.infoTop > h2 {
+    font-weight: 700;
+    display: inline;
+    font-size: 20px;
+}
+
+
+.rating {
     display: inline;
     float: right;
     position: relative;
-    top: 7px;
+    top: 4px;
+    margin-right: 10px;
+    padding-bottom: 0px;
 }
 
 .rating > h5 {
-    display: inline;
+    font-weight: 500;
+    float: right;
     position: relative;
-    top: -7px;
+    top: 1px;
+    margin-left: 3px;
 }
 
-.infoTop > h2{
-    display: inline;
+.gray{
+    color: grey;
+}
+
+
+.houseInfo > h4 {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.houseInfo > h4 > span {
+    margin-right: 10px;
+}
+
+.houseDescription {
+    width: 400px;
+    margin-top: 5px;
+    overflow: hidden;
+
+}
+
+.houseDescription > p {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 5px 0 5px;
+
+}
+
+
+
+
+/*------------Amenities------------ */
+
+
+.amenities {
+
+}
+
+.amenity {
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 3px;
+    padding: 1px 5px;
+    background-color: lightgrey;
+    border-radius: 5px;
+
+}
+
+.amenity > h4 {
+    font-size: 11px;
+    font-weight: 400;
 }
 
 
@@ -79,21 +156,26 @@
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 735px) {
 
-    .row{
+    .row {
         flex-direction: column;
         height: auto;
     }
+
     .row > img {
         flex: 100%;
         margin-bottom: 10px;
     }
 
-    .rowInfo{
+    .rowInfo {
 
     }
 
+    .houseDescription {
+        width: 100%;
+        margin-bottom: 20px
+    }
 
 
 
