@@ -79,7 +79,7 @@ export default function Test() {
             <div className={'left'}>
                 {items}
             </div>
-            
+
             <div className={'right'}>
                 <Map/>
             </div>
