@@ -1,7 +1,6 @@
 import '../css/Test.css';
 import React from "react";
 import Map from '../components/Map'
-import Rating from '@material-ui/lab/Rating';
 import {cabins} from '../JSON/cabins.js'
 import {Icon} from "@iconify/react";
 import starFilled from "@iconify/icons-ant-design/star-filled";
@@ -48,7 +47,7 @@ const items = cabins.map((cabin, index) => {
                     <h2>{cabin.title}</h2>
                     <div className={'rating'}>
                         <Icon icon = {starFilled} color="#e61e4d" width="18" height="18" inline={true}/>
-                        <h5 className={"gray"}>({cabin.reviews})</h5>
+                        <h5 className={"gray"}>({cabin.reviews} reviews)</h5>
                         <h5>{cabin.rating}</h5>
                     </div>
                 </div>
@@ -62,14 +61,14 @@ const items = cabins.map((cabin, index) => {
                 <div className={"houseDescription"}>
                     <p>{trimString(cabin.description)}</p>
                 </div>
-                <h4 style={{float: 'bottom-right'}}>License: {cabin.license}</h4>
+                <h4 className={"license"}>License: {cabin.license}</h4>
             </div>
         </div>
     )
 })
 
 
-export default function Test() {
+export default function Restaurants() {
 
     return (
 
@@ -86,5 +85,4 @@ export default function Test() {
         </div>
 
     )
-
 }

@@ -32,8 +32,8 @@ function Home() {
             <div className='home__section'>
                 <Card
                     image1={GoldRush720_1}
-                    title="Current Events"
-                    link= "/"
+                    title="All Cabins"
+                    link= "/cabins"
                     icon={<Icon icon={calendarEvent} width="20" height="20" inline={true}/>}
                 />
                 <Card
@@ -44,7 +44,7 @@ function Home() {
                 <Card
                     image1={Hiking720}
                     title="Restaurants"
-                    link= "/search"
+                    link= "/restaurants"
                     icon={<Icon icon={iRestaurant} width="20" height="20" inline={true}/>}
                 />
             </div>

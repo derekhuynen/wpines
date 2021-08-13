@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import SearchPage from "./pages/SearchPage";
 import Footer from './components/Footer'
 import Test from './pages/Test'
+import Restaurants from './pages/Restaurants'
 
 function App() {
   return (
@@ -18,7 +19,10 @@ function App() {
               <Route path="/search">
                   <SearchPage />
               </Route>
-              <Route path="/test">
+              <Route path="/restaurants">
+                  <Restaurants />
+              </Route>
+              <Route path="/cabins">
                   <Test />
               </Route>
             <Route path="/">
