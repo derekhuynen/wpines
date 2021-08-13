@@ -20,6 +20,7 @@ import { Icon } from '@iconify/react';
 import calendarEvent from '@iconify/icons-bi/calendar-event';
 import baselineHiking from '@iconify/icons-ic/baseline-hiking';
 import iRestaurant from '@iconify/icons-medical-icon/i-restaurant';
+import houseDoor from '@iconify/icons-bi/house-door';
 
 
 function Home() {
@@ -34,7 +35,7 @@ function Home() {
                     image1={GoldRush720_1}
                     title="All Cabins"
                     link= "/cabins"
-                    icon={<Icon icon={calendarEvent} width="20" height="20" inline={true}/>}
+                    icon={<Icon icon={houseDoor} width="20" height="20" inline={true}/>}
                 />
                 <Card
                     image1= {Village720}
