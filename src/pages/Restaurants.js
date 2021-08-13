@@ -39,7 +39,7 @@ const items = yelp.map((restaurant, index) => {
                     <h4>{restaurant.price}</h4>
                     <div className={'rating'}>
                         <Icon icon = {starFilled} color="#e61e4d" width="18" height="18" inline={true}/>
-                        <h5 className={"gray"}>({restaurant.review_count})</h5>
+                        <h5 className={"gray"}>({restaurant.review_count} reviews)</h5>
                         <h5>{restaurant.rating}</h5>
                     </div>
                 </div>

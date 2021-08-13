@@ -232,7 +232,7 @@ export const yelp = [
     {
         "id": "51Xsw-SkLwmZi_Z51YO9BA",
         "alias": "murrays-saloon-and-eatery-big-bear-lake",
-        "name": "Murray's Saloon & Eatery",
+        "name": "Murray's Saloon",
         "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/AZ02UJjwvNLev2RIt3Tv4w/o.jpg",
         "is_closed": false,
         "url": "https://www.yelp.com/biz/murrays-saloon-and-eatery-big-bear-lake?adjust_creative=4pc7F2eLJWD23C15UhsaRA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=4pc7F2eLJWD23C15UhsaRA",
@@ -539,7 +539,7 @@ export const yelp = [
     {
         "id": "rY_oBeebUNK-JBDJw-NuLg",
         "alias": "big-bear-lake-brewing-company-big-bear-lake",
-        "name": "Big Bear Lake Brewing Company",
+        "name": "Brewing Company",
         "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rCgFVIhHBvFE-qs0FfRhhw/o.jpg",
         "is_closed": false,
         "url": "https://www.yelp.com/biz/big-bear-lake-brewing-company-big-bear-lake?adjust_creative=4pc7F2eLJWD23C15UhsaRA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=4pc7F2eLJWD23C15UhsaRA",
@@ -631,7 +631,7 @@ export const yelp = [
     {
         "id": "cwK8NADtCix-wwTkGMob0A",
         "alias": "bone-side-down-barbecue-and-grill-big-bear-lake",
-        "name": "Bone-Side Down Barbecue & Grill",
+        "name": "Bone-Side Down Barbecue",
         "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/JhSdNPLrETDOr3pd0dNqrA/o.jpg",
         "is_closed": false,
         "url": "https://www.yelp.com/biz/bone-side-down-barbecue-and-grill-big-bear-lake?adjust_creative=4pc7F2eLJWD23C15UhsaRA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=4pc7F2eLJWD23C15UhsaRA",
@@ -677,7 +677,7 @@ export const yelp = [
     {
         "id": "8CtLze0xcg4ia0MME7IW7w",
         "alias": "amangelas-sandwich-and-bagel-house-big-bear-lake-2",
-        "name": "Amangela's Sandwich & Bagel House",
+        "name": "Amangela's",
         "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/WvsYhHX6KxqtOXdVR5VGhw/o.jpg",
         "is_closed": false,
         "url": "https://www.yelp.com/biz/amangelas-sandwich-and-bagel-house-big-bear-lake-2?adjust_creative=4pc7F2eLJWD23C15UhsaRA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=4pc7F2eLJWD23C15UhsaRA",
@@ -758,7 +758,7 @@ export const yelp = [
     {
         "id": "cDFenpGfdQtumnalVlOoNw",
         "alias": "572-social-kitchen-and-lounge-big-bear-lake",
-        "name": "572 Social Kitchen  & Lounge",
+        "name": "572 Social Kitchen",
         "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/MQFYRPpyhmgmCSeT1yh8lA/o.jpg",
         "is_closed": false,
         "url": "https://www.yelp.com/biz/572-social-kitchen-and-lounge-big-bear-lake?adjust_creative=4pc7F2eLJWD23C15UhsaRA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=4pc7F2eLJWD23C15UhsaRA",
