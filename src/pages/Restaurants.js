@@ -2,8 +2,7 @@ import '../css/Test.css';
 import React from "react";
 import Map from '../components/Map'
 import {yelp} from '../JSON/yelp.js'
-import {Icon} from "@iconify/react";
-import starFilled from "@iconify/icons-ant-design/star-filled";
+import StarRatings from 'react-star-ratings';
 
 
 function items2(categories) {
@@ -28,24 +27,38 @@ function openLink(link) {
 const items = yelp.map((restaurant, index) => {
 
     return (
-        <div className={'row'} onClick={() => {
+        <div className={'restaurant'} onClick={() => {
             openLink(restaurant.url)
         }}>
-            <div className={"imageDiv"}><img className={"restaurantImg "} src={restaurant.image_url} alt="Restaurant in Big Bear"/></div>
+            <div className={"restaurantImage"}>
+                <img className={"restaurantImg "} src={restaurant.image_url} alt="Restaurant in Big Bear"/>
+            </div>
 
-            <div className={'rowInfo'}>
-                <div className={'infoTop'}>
+            <div className={'restaurantInfo'}>
+                <div className={'restaurantTop'}>
                     <h2>{restaurant.name}</h2>
-                    <h4>{restaurant.price}</h4>
-                    <div className={'rating'}>
-                        <Icon icon = {starFilled} color="#e61e4d" width="18" height="18" inline={true}/>
-                        <h5 className={"gray"}>({restaurant.review_count} reviews)</h5>
-                        <h5>{restaurant.rating}</h5>
-                    </div>
+                    <h4 className={"price"}>{restaurant.price}</h4>
                 </div>
-                {items2(restaurant.categories)}
-                <h4>{restaurant.location.display_address.toString()}</h4>
-                <h4>{restaurant.display_phone}</h4>
+
+                <div className={"restaurantBottom"}>
+                    <div className={"restaurantRating"}>
+                        <StarRatings
+                            rating={restaurant.rating}
+                            starRatedColor="#FF385C"
+                            numberOfStars={5}
+                            name='rating'
+                            starDimension={17}
+                            starSpacing={3}
+                            starEmptyColor={"gray"}
+                        />
+                        <h5 className={"gray"}>({restaurant.review_count} reviews)</h5>
+                    </div>
+
+                    {items2(restaurant.categories)}
+                    <h4>{restaurant.location.display_address.toString()}</h4>
+                    <h4>{restaurant.display_phone}</h4>
+                </div>
+
             </div>
         </div>
     )

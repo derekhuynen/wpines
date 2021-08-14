@@ -14,10 +14,18 @@
 
 .right {
     flex: 100%;
-    background-color: aqua;
+
 }
 
-.row {
+.map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*--------------CABIN---------------*/
+
+.cabin {
     display: flex;
     flex: 100%;
     flex-flow: row;
@@ -29,33 +37,24 @@
     border-bottom: 1px solid lightgray;
 }
 
+.cabinImage {
+    width: 300px;
+    height: 200px;
+}
 
-.rowInfo {
+.cabinImage > img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 10px;
+    position: center;
+}
+
+.cabinInfo {
     flex: auto;
     flex-direction: column;
     padding-left: 10px;
-
     position: relative;
-}
-
-.row > img {
-    width: auto;
-    height: 200px;
-    object-fit: contain;
-    border-radius: 10px;
-}
-
-.map {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.rowInfo >  h4 {
-    margin-top: 5px;
-    font-size: 14px;
-    font-weight: 600;
-
 }
 
 .license {
@@ -66,35 +65,14 @@
     bottom: 4px;
 }
 
-.restaurantImg{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border-radius: 10px;
-    position: center;
-}
 
-.imageDiv {
-    width: 300px;
-    height: 200px;
-
-
-}
-
-
-/*------------House stuff------------ */
-.infoTop  {
-
-}
-
-
-.infoTop > h2 {
+.cabinTop > h2 {
     font-weight: 700;
     display: inline;
     font-size: 20px;
 }
 
-.infoTop > h4 {
+.cabinTop > h4 {
     display: inline;
     font-size: 20px;
     color: darkgreen;
@@ -102,9 +80,7 @@
 
 }
 
-
-
-.rating {
+.houseRating {
     display: inline;
     float: right;
     position: relative;
@@ -113,7 +89,7 @@
     padding-bottom: 0;
 }
 
-.rating > h5 {
+.houseRating > h5 {
     font-weight: 500;
     float: right;
     position: relative;
@@ -121,26 +97,24 @@
     margin-left: 3px;
 }
 
-.gray{
-    color: grey;
-}
-
-
-.houseInfo > h4 {
+.cabinBedInfo > h4 {
     display: inline-block;
     font-size: 12px;
     font-weight: 500;
 }
 
-.houseInfo > h4 > span {
+.cabinBedInfo > h4 > span {
     margin-right: 10px;
+}
+
+.gray{
+    color: grey;
 }
 
 .houseDescription {
     width: 380px;
     margin-top: 5px;
     overflow: hidden;
-
 }
 
 .houseDescription > p {
@@ -150,15 +124,7 @@
 
 }
 
-
-
-
 /*------------Amenities------------ */
-
-
-.amenities {
-
-}
 
 .amenity {
     display: inline-block;
@@ -176,6 +142,82 @@
 }
 
 
+/*------------Restaurant-----------*/
+
+.restaurant {
+    display: flex;
+    flex: 100%;
+    flex-flow: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+.restaurantImage {
+    width: 300px;
+    height: 200px;
+}
+
+.restaurantImage > img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 10px;
+    position: center;
+}
+
+.restaurantInfo {
+    flex: auto;
+    flex-direction: column;
+    padding-left: 10px;
+    position: relative;
+}
+
+.restaurantTop > h2 {
+    font-weight: 700;
+    display: inline;
+    font-size: 16px;
+}
+
+.restaurantTop > h4 {
+    display: inline;
+    font-size: 16px;
+    color: darkgreen;
+    margin-left: 10px;
+
+}
+
+.restaurantRating {
+    top: 4px;
+    margin-right: 10px;
+    padding-bottom: 0;
+}
+
+.restaurantRating > h5 {
+    display: inline;
+    font-weight: 500;
+    position: relative;
+    top: 1px;
+    margin-left: 3px;
+}
+
+.price {
+    float: right;
+    position: relative;
+    margin-right: 10px;
+}
+.restaurantBottom > h4{
+    font-size: 12px;
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+
+
+
 @media screen and (max-width: 1200px) {
 
     .right {
@@ -190,6 +232,23 @@
 }
 
 @media screen and (max-width: 760px) {
+
+
+    .restaurant {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .restaurantImage {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
 
     .row {
         flex-direction: column;
@@ -209,16 +268,8 @@
 
     }
 
-
-    .rowInfo {
-
-    }
-
     .houseDescription {
         width: 100%;
         margin-bottom: 20px
     }
-
-
-
 }
