@@ -24,7 +24,7 @@ function App() {
                     <Route path="/cabins" component={Cabins}/>
 
                     <Route path="/weather" component={Weather}/>
-              
+
                     <Route path="/" component={Home}/>
 
                 </Switch>

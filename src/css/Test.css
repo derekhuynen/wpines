@@ -245,28 +245,17 @@
         margin-bottom: 10px;
     }
 
-
-
-
-
-
-    .row {
+    .cabin {
         flex-direction: column;
         height: auto;
     }
 
-    .row > img {
-        flex: 100%;
-        margin-bottom: 10px;
-    }
-
-
-    .imageDiv {
+    .cabinImage {
         width: 100%;
         height: 300px;
         margin-bottom: 10px;
-
     }
+
 
     .houseDescription {
         width: 100%;
