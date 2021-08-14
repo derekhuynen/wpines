@@ -39,6 +39,8 @@
 }
 
 .row > img {
+    width: auto;
+    height: 200px;
     object-fit: contain;
     border-radius: 10px;
 }
@@ -108,7 +110,7 @@
     position: relative;
     top: 4px;
     margin-right: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .rating > h5 {

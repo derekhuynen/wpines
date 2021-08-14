@@ -12,7 +12,7 @@ function items2(categories) {
         <div className={"amenities"}>
             {categories.map((category, index) => {
                 return (
-                    <div className={"amenity"}>
+                    <div key={index} id={index} className={"amenity"}>
                         <h4>{category.title}</h4>
                     </div>
                 )

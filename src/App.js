@@ -6,7 +6,8 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import SearchPage from "./pages/SearchPage";
 import Footer from './components/Footer'
-import Test from './pages/Test'
+import Weather from './components/Weather'
+import Cabins from './pages/Cabins'
 import Restaurants from './pages/Restaurants'
 
 function App() {
@@ -23,7 +24,10 @@ function App() {
                   <Restaurants />
               </Route>
               <Route path="/cabins">
-                  <Test />
+                  <Cabins />
+              </Route>
+              <Route path="/weather">
+                  <Weather />
               </Route>
             <Route path="/">
               <Home />
