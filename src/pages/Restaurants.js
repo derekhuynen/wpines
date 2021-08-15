@@ -65,8 +65,8 @@ const items = yelp.map((restaurant, index) => {
 })
 
 const center =  {
-    lat: 34.212527537480895,
-    lng: -116.90836774720256
+    lat: 34.23917082635063,
+    lng: -116.9122004384206
 }
 
 export default function Test() {

@@ -53,6 +53,7 @@ const Map = ({center, zoom, items, comp}) => {
                 defaultZoom={zoom}
                 onClick={ev => {
                     setLocationInfo(null)
+                    console.log(ev)
                 }}
             >
                 {markers}

@@ -30,16 +30,6 @@ export const businesses = [
         ]
     },
     {
-        "title": "Big Bear Visitor Center",
-        "address": "40824 Big Bear Blvd, Big Bear Lake, California 92315",
-        "number": "(800) 424-4232",
-        "link": "https://www.bigbear.com/",
-        "image1": "https://www.bigbear.com/imager/files_idss_com/C347/31209371-2d0b-4e46-915d-c42211bb4602_e4c0c16d48cd0c6a8e672d9471b4d463.jpg",
-        "topics": [
-            "Big Bear Lake", "Information", "Store"
-        ]
-    },
-    {
         "title": "Holloway's Marina & RV Park",
         "address": "398 Edgemoor Rd, Big Bear Lake, California 92315",
         "number": "(909)-866-5706",
@@ -77,16 +67,6 @@ export const businesses = [
         "image1": "https://www.bigbear.com/imager/files_idss_com/C347/members/BB-Jeep-Experience-rock-crawling_e4c0c16d48cd0c6a8e672d9471b4d463.jpeg",
         "topics": [
             "Activity","Rentals"
-        ]
-    },
-    {
-        "title": "Big Bear Discount Gifts and Souvenirs",
-        "address": "669 Pine Knot, Big Bear Lake, California 92315",
-        "number": "(909) 584-8768",
-        "link": "https://www.bigbeardiscount.com/",
-        "image1": "https://www.bigbear.com/imager/files_idss_com/C347/2eda99a2-d8c9-470e-9e72-ad678e851aab_e4c0c16d48cd0c6a8e672d9471b4d463.jpg",
-        "topics": [
-            "Store","Village"
         ]
     },
     {
@@ -180,16 +160,6 @@ export const businesses = [
         ]
     },
     {
-        "title": "The Red Barn",
-        "address": "532 Badger Lane, Blvd Big Bear Lake, CA 92315",
-        "number": "(909) 878-4080",
-        "link": "https://theredbarnbigbear.com/?_ga=2.2141360.1023113110.1629062278-250566232.1628941190",
-        "image1": "https://www.bigbear.com/imager/files_idss_com/C347/78e4b407-586c-4e03-a3ee-e4e13ef52bfb_e4c0c16d48cd0c6a8e672d9471b4d463.jpg",
-        "topics": [
-            "Store"
-        ]
-    },
-    {
         "title": "The Fitness Source Big Bear",
         "address": "42169 Big Bear Blvd, Blvd Big Bear Lake, CA 92315",
         "number": "(909) 866-5300",
@@ -220,16 +190,6 @@ export const businesses = [
         ]
     },
     {
-        "title": "Chirp Nature Centers",
-        "address": "578 Bonanza Trail, Blvd Big Bear Lake, CA 92315",
-        "number": "(888) 412-4477",
-        "link": "https://chirpforbirds.com/",
-        "image1": "https://www.bigbear.com/imager/files_idss_com/C347/217854b5-8cfa-4316-9472-64db80f460a2_e4c0c16d48cd0c6a8e672d9471b4d463.jpg",
-        "topics": [
-            "Store"
-        ]
-    },
-    {
         "title": "Mountain Room Escapes",
         "address": "40588 Village Dr., Blvd Big Bear Lake, CA 92315",
         "number": "(877) 584-6427",
@@ -247,16 +207,6 @@ export const businesses = [
         "image1": "https://www.bigbear.com/imager/files_idss_com/C347/members/MG6N0332_e4c0c16d48cd0c6a8e672d9471b4d463.jpg",
         "topics": [
             "Activity","Rentals","Lake","Marina"
-        ]
-    },
-    {
-        "title": "Yarn Designers Boutique",
-        "address": "439 West Big Bear Blvd, Blvd Big Bear Lake, CA 92315",
-        "number": "(909) 584-9715",
-        "link": "https://yarndesignersboutique.com/",
-        "image1": "https://www.bigbear.com/imager/files_idss_com/C347/22351711-628f-4d70-80ef-debd4f56fa84_e4c0c16d48cd0c6a8e672d9471b4d463.jpg",
-        "topics": [
-           "Store"
         ]
     },
     {
@@ -309,27 +259,6 @@ export const businesses = [
         "image1": "https://www.bigbear.com/imager/files_idss_com/C347/45cb723e-ee12-48e6-a81d-14824253289e_e4c0c16d48cd0c6a8e672d9471b4d463.JPG",
         "topics": [
             "Activity","Tour","Family"
-        ]
-    },
-
-    {
-        "title": "Barrel 33",
-        "address": "40754 Village Dr, Blvd Big Bear Lake, CA 92315",
-        "number": "(909) 878-0838",
-        "link": "https://www.bigbearzoo.org/",
-        "image1": "https://www.bigbear.com/imager/files_idss_com/C347/members/Big_bear_barrel33_wine_romm_e4c0c16d48cd0c6a8e672d9471b4d463.jpg",
-        "topics": [
-            "Store"
-        ]
-    },
-    {
-        "title": "Shirt Shanty",
-        "address": "684 Pine Knot Ave, Blvd Big Bear Lake, CA 92315",
-        "number": "(909) 866-7928",
-        "link": "https://www.facebook.com/ShirtShanty/",
-        "image1": "https://www.bigbear.com/imager/files_idss_com/C347/2010f1f5-ed6b-40eb-8a29-937fea49ccd7_e4c0c16d48cd0c6a8e672d9471b4d463.jpg",
-        "topics": [
-            "Store","Village"
         ]
     },
     {
