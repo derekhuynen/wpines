@@ -8,8 +8,6 @@ import RestaurantSmall from "./RestaurantSmall";
 
 
 const LocationInfoBox = ({info, comp}) => {
-    console.log(comp)
-    console.log(info)
     if(comp === "cabin") {
         return <CabinSmall info={info}/>
     } else if (comp === "restaurant"){
@@ -54,7 +52,6 @@ const Map = ({center, zoom, items, comp}) => {
                 defaultCenter={center}
                 defaultZoom={zoom}
                 onClick={ev => {
-                    console.log(ev)
                     setLocationInfo(null)
                 }}
             >

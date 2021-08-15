@@ -7,8 +7,6 @@ function openLink(link) {
 }
 
 export default function RestaurantSmall({info}) {
-
-    console.log(info);
     return (
         <div className="location-info" >
             <div className={"image"}>
@@ -25,8 +23,8 @@ export default function RestaurantSmall({info}) {
                         starRatedColor="#FF385C"
                         numberOfStars={5}
                         name='rating'
-                        starDimension={15}
-                        starSpacing={1}
+                        starDimension={'15'}
+                        starSpacing={'1'}
                         starEmptyColor={"gray"}
                     />
                     <h5 className={"gray"}>({info.review_count} reviews)</h5>

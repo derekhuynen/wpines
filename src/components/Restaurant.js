@@ -28,7 +28,7 @@ function openLink(link) {
 const items = yelp.map((restaurant, index) => {
 
     return (
-        <div className={'row'} onClick={() => {
+        <div key={index} className={'row'} onClick={() => {
             openLink(restaurant.url)
         }}>
             <div className={"imageDiv"}><img className={"restaurantImg "} src={restaurant.image_url} alt="Restaurant in Big Bear"/></div>

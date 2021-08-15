@@ -8,8 +8,6 @@ function openLink(link) {
 }
 
 export default function CabinSmall({info}) {
-
-    console.log(info);
     return (
         <div className="location-info" >
             <div className={"image"}>

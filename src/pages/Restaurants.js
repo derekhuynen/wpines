@@ -3,7 +3,6 @@ import React from "react";
 import Map from '../components/Map'
 import {yelp} from '../JSON/yelp.js'
 import StarRatings from 'react-star-ratings';
-import {Element} from "react-scroll";
 
 
 function items2(categories) {
@@ -28,7 +27,7 @@ function openLink(link) {
 const items = yelp.map((restaurant, index) => {
 
     return (
-        <div className={'restaurant'} onClick={() => {
+        <div key={index} className={'restaurant'} onClick={() => {
             openLink(restaurant.url)
         }}>
             <div className={"restaurantImage"}>
@@ -48,8 +47,8 @@ const items = yelp.map((restaurant, index) => {
                             starRatedColor="#FF385C"
                             numberOfStars={5}
                             name='rating'
-                            starDimension={17}
-                            starSpacing={3}
+                            starDimension={'17'}
+                            starSpacing={'3'}
                             starEmptyColor={"gray"}
                         />
                         <h5 className={"gray"}>({restaurant.review_count} reviews)</h5>

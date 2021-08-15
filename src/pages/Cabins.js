@@ -5,7 +5,6 @@ import {cabins} from '../JSON/cabins.js'
 import {Icon} from "@iconify/react";
 import starFilled from "@iconify/icons-ant-design/star-filled";
 
-import {animateScroll as scroll, Element} from 'react-scroll'
 
 
 function trimString(str) {
