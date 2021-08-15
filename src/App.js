@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Weather from './components/Weather'
 import Cabins from './pages/Cabins'
 import Restaurants from './pages/Restaurants'
+import Activities from './pages/Activities'
 
 function App() {
     return (
@@ -17,6 +18,8 @@ function App() {
 
                 <Switch>
                     <Route path="/restaurants" component={Restaurants}/>
+
+                    <Route path="/activities" component={Activities}/>
 
                     <Route path="/cabins" component={Cabins}/>
 

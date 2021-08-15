@@ -39,6 +39,7 @@ function Home() {
                 <Card
                     image1= {Hiking}
                     title="Things To Do"
+                    link= "/activities"
                     icon={<Icon icon={baselineHiking} width="20" height="20" inline={true}/>}
                 />
                 <Card
