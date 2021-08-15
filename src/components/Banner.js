@@ -6,8 +6,6 @@ import  {useHistory}  from "react-router-dom";
 function Banner() {
     const history = useHistory();
 
-
-
     return (
         <div className='banner'>
             <div className='banner__info'>

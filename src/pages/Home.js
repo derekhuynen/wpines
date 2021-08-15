@@ -5,8 +5,8 @@ import HouseCard from '../components/HouseCard'
 import Card from '../components/Card'
 
 import House from '../CabinPhotos/Cabins/GoldRushSmall.JPG'
-import Hiking720 from '../CabinPhotos/City720/City720-1.JPG'
-import Village720 from '../CabinPhotos/City720/City720-2.JPG'
+import Hiking from '../CabinPhotos/City720/Hiking.JPG'
+import Village from '../CabinPhotos/City720/Village.JPG'
 
 import { Icon } from '@iconify/react';
 import baselineHiking from '@iconify/icons-ic/baseline-hiking';
@@ -37,12 +37,12 @@ function Home() {
                     icon={<Icon icon={houseDoor} width="20" height="20" inline={true}/>}
                 />
                 <Card
-                    image1= {Village720}
+                    image1= {Hiking}
                     title="Things To Do"
                     icon={<Icon icon={baselineHiking} width="20" height="20" inline={true}/>}
                 />
                 <Card
-                    image1={Hiking720}
+                    image1={Village}
                     title="Restaurants"
                     link= "/restaurants"
                     icon={<Icon icon={iRestaurant} width="20" height="20" inline={true}/>}

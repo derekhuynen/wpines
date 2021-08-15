@@ -15,6 +15,7 @@
     transform: scale(1.07);
 }
 
+
 .card > img {
     object-fit: fill;
     min-width: 200px;

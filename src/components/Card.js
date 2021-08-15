@@ -9,6 +9,7 @@ function HouseCard({image1, title, icon, link}) {
     return (
         <div className='card' onClick={() => history.push(link)}>
             <img src={image1} alt=""/>
+
             <div className="card__info">
                 <div className={'card__title'}>
                     <h2 style={{float: 'left'}}>{title}</h2>
