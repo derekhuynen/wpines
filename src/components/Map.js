@@ -1,8 +1,51 @@
-import React from 'react'
+import React, {useState} from 'react'
 import GoogleMapReact from 'google-map-react'
+import {Icon} from '@iconify/react';
+import locationIcon from '@iconify/icons-mdi/map-marker';
+import '../css/Map.css'
+import CabinSmall from './CabinSmall'
+import RestaurantSmall from "./RestaurantSmall";
 
 
-const Map = ({center, zoom}) => {
+const LocationInfoBox = ({info, comp}) => {
+    console.log(comp)
+    console.log(info)
+    if(comp === "cabin") {
+        return <CabinSmall info={info}/>
+    } else if (comp === "restaurant"){
+        return <RestaurantSmall info={info}/>
+    }else{
+        return "";
+    }
+
+}
+
+
+const AnyReactComponent = ({onClick}) => {
+    return(
+        <div className={'marker'} onClick={onClick}>
+            <Icon className={"icon"} icon={locationIcon} color="red" width="25" height="25"/>
+        </div>
+        )
+}
+
+
+const Map = ({center, zoom, items, comp}) => {
+    const [locationInfo, setLocationInfo] = useState(null)
+
+    const markers = items.map((item, index) => {
+        return (
+            <AnyReactComponent
+                key={index}
+                lat={item.coordinates.latitude}
+                lng={item.coordinates.longitude}
+                text="My Marker"
+                onClick={() => {
+                    setLocationInfo(item)
+                }}
+            />
+        )
+    });
 
     return (
         <div className="map">
@@ -10,8 +53,15 @@ const Map = ({center, zoom}) => {
                 bootstrapURLKeys={{key: process.env.REACT_APP_MAP_KEY}}
                 defaultCenter={center}
                 defaultZoom={zoom}
+                onClick={ev => {
+                    console.log(ev)
+                    setLocationInfo(null)
+                }}
             >
+                {markers}
+                {locationInfo && <LocationInfoBox lat={locationInfo.coordinates.latitude} lng={locationInfo.coordinates.longitude} info={locationInfo} comp={comp}/>}
             </GoogleMapReact>
+
         </div>
     )
 }
@@ -21,7 +71,7 @@ Map.defaultProps = {
         lat: 34.238815,
         lng: -116.88877
     },
-    zoom: 15
+    zoom: 14
 }
 
 export default Map

@@ -3,6 +3,7 @@ import React from "react";
 import Map from '../components/Map'
 import {yelp} from '../JSON/yelp.js'
 import StarRatings from 'react-star-ratings';
+import {Element} from "react-scroll";
 
 
 function items2(categories) {
@@ -64,6 +65,10 @@ const items = yelp.map((restaurant, index) => {
     )
 })
 
+const center =  {
+    lat: 34.212527537480895,
+    lng: -116.90836774720256
+}
 
 export default function Test() {
 
@@ -71,13 +76,11 @@ export default function Test() {
 
 
         <div className={'container'}>
-
-            <div className={'left'}>
-                {items}
-            </div>
-
+                    <div className={'left'}>
+                        {items}
+                    </div>
             <div className={'right'}>
-                <Map/>
+                <Map items={yelp} zoom={16} center={center} comp={"restaurant"}/>
             </div>
         </div>
 

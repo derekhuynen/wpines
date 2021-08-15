@@ -5,6 +5,8 @@ import {cabins} from '../JSON/cabins.js'
 import {Icon} from "@iconify/react";
 import starFilled from "@iconify/icons-ant-design/star-filled";
 
+import {animateScroll as scroll, Element} from 'react-scroll'
+
 
 function trimString(str) {
 
@@ -19,7 +21,7 @@ function trimString(str) {
 function items2(amenities) {
 
     return (
-        <div  className={"amenities"}>
+        <div className={"amenities"}>
             {amenities.map((amenity, index) => {
                 return (
                     <div key={index} id={index} className={"amenity"}>
@@ -47,12 +49,11 @@ const items = cabins.map((cabin, index) => {
             </div>
 
 
-
             <div className={'cabinInfo'}>
                 <div className={'cabinTop'}>
                     <h2>{cabin.title}</h2>
                     <div className={'houseRating'}>
-                        <Icon icon = {starFilled} color="#e61e4d" width="18" height="18" inline={true}/>
+                        <Icon icon={starFilled} color="#e61e4d" width="18" height="18" inline={true}/>
                         <h5 className={"gray"}>({cabin.reviews} reviews)</h5>
                         <h5>{cabin.rating}</h5>
                     </div>
@@ -74,20 +75,29 @@ const items = cabins.map((cabin, index) => {
     )
 })
 
+const center = {
+    lat: 34.24651450381265,
+    lng: -116.86896456863401
+}
 
 export default function Cabins() {
 
     return (
 
-        <div className={'container'}>
+        <>
 
-            <div className={'left'}>
-                {items}
-            </div>
 
-            <div className={'right'}>
-                <Map/>
+            <div className={'container'}>
+
+
+                        <div className={'left'}>
+                            {items}
+                        </div>
+
+                <div className={'right'}>
+                    <Map center={center} items={cabins} comp={"cabin"}/>
+                </div>
             </div>
-        </div>
+        </>
     )
 }

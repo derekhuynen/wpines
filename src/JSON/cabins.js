@@ -5,7 +5,7 @@ import WhisperingPines720_1 from '../CabinPhotos/WhsiperingPines720/WhisperingPi
 import GoldRush720_1 from '../CabinPhotos/GoldRush720/GoldRush720-1.JPG'
 
 
-export  const cabins = [
+export const cabins = [
     {
         "title": "Whispering Pines",
         "guests": 4,
@@ -17,8 +17,12 @@ export  const cabins = [
         "rating": 4.92,
         "reviews": 74,
         "image1": WhisperingPines720_1,
-        "amenities": ["Wifi","Free Parking","TV", "Washer"],
-        "description":"It’s summer in Big Bear Lake. Time to get out and get active! Check out the natural beauty and serenity of the area while hiking to Castle Rock, biking the Alpine Pedal Path, or exploring restaurants and shopping that are all within easy reach. Then in the cool evening curl up by the fire in our perfectly appointed cabin for 4. We can provide a safe storage place for your personal bike. Military Friendly. We have a no pet policy."
+        "amenities": ["Wifi", "Free Parking", "TV", "Washer"],
+        "coordinates": {
+            "latitude": 34.24475949144142,
+            "longitude": -116.87468651241723
+        },
+        "description": "It’s summer in Big Bear Lake. Time to get out and get active! Check out the natural beauty and serenity of the area while hiking to Castle Rock, biking the Alpine Pedal Path, or exploring restaurants and shopping that are all within easy reach. Then in the cool evening curl up by the fire in our perfectly appointed cabin for 4. We can provide a safe storage place for your personal bike. Military Friendly. We have a no pet policy."
     },
     {
         "title": "Scandia Chalet",
@@ -31,8 +35,12 @@ export  const cabins = [
         "rating": 4.75,
         "reviews": 4,
         "image1": Scandia720_1,
-        "amenities": ["Wifi","Free Parking","TV", "Washer"],
-        "description":"Family friendly home near the slopes and lake. Remodeled game room and master bedroom/bathroom. Great snow play area in back yard. You are a few minutes from all Big Bear has to offer, and can still relax in the mountains."
+        "amenities": ["Wifi", "Free Parking", "TV", "Washer"],
+        "coordinates": {
+            "latitude": 34.24749574804766,
+            "longitude": -116.87771618285815
+        },
+        "description": "Family friendly home near the slopes and lake. Remodeled game room and master bedroom/bathroom. Great snow play area in back yard. You are a few minutes from all Big Bear has to offer, and can still relax in the mountains."
     },
     {
         "title": "Papa Bear Cabin",
@@ -45,8 +53,13 @@ export  const cabins = [
         "rating": 5.0,
         "reviews": 3,
         "image1": PapaBear720_1,
-        "amenities": ["Wifi","Free Parking","TV", "Washer"],
-        "description": "Located in the desirable centrally located Fox Farm neighborhood. Bear Mountain and Snow Summit are both nearby. This cozy cabin is a perfect place to relax and get a real mountain experience as it offers comfortable amenities, beautiful cabin decor, all of your cooking needs, a large yard with beautiful trees, a propane BBQ, games, TV, fireplace, wifi, and is just up the street from grocery stores, restaurants, and the lake. Secure your bicycles on our wrap-around porch."    },
+        "amenities": ["Wifi", "Free Parking", "TV", "Washer"],
+        "coordinates": {
+            "latitude": 34.24423426962682,
+            "longitude": -116.87561163613162
+        },
+        "description": "Located in the desirable centrally located Fox Farm neighborhood. Bear Mountain and Snow Summit are both nearby. This cozy cabin is a perfect place to relax and get a real mountain experience as it offers comfortable amenities, beautiful cabin decor, all of your cooking needs, a large yard with beautiful trees, a propane BBQ, games, TV, fireplace, wifi, and is just up the street from grocery stores, restaurants, and the lake. Secure your bicycles on our wrap-around porch."
+    },
     {
         "title": "Tree Hütte",
         "guests": 5,
@@ -58,8 +71,12 @@ export  const cabins = [
         "rating": 4.89,
         "reviews": 9,
         "image1": TreeHutte720_1,
-        "amenities": ["Wifi","Free Parking","TV", "Washer"],
-        "description":"Our 1969, mid-century chalet has been given a mountain modern update and is ready for your next getaway. Rustic and modern, meets camp vibes in the trees. Cozy 1100+ sq ft cabin is nestled in the trees in a quiet cul-de-sac in highly desirable Moonridge. 3 bedroom, 1 bath, with level driveway. The large lot provides plenty of space, outdoor deck, trees, + your own private sledding hill. Just a short drive to the new zoo, Bear mountain resort, hiking, biking, & more."
+        "amenities": ["Wifi", "Free Parking", "TV", "Washer"],
+        "coordinates": {
+            "latitude": 34.23293415254536,
+            "longitude": -116.85089084055075
+        },
+        "description": "Our 1969, mid-century chalet has been given a mountain modern update and is ready for your next getaway. Rustic and modern, meets camp vibes in the trees. Cozy 1100+ sq ft cabin is nestled in the trees in a quiet cul-de-sac in highly desirable Moonridge. 3 bedroom, 1 bath, with level driveway. The large lot provides plenty of space, outdoor deck, trees, + your own private sledding hill. Just a short drive to the new zoo, Bear mountain resort, hiking, biking, & more."
     },
     {
         "title": "Gold Rush Lodge",
@@ -72,7 +89,11 @@ export  const cabins = [
         "rating": 5.0,
         "reviews": 21,
         "image1": GoldRush720_1,
-        "amenities": ["Wifi","Free Parking","TV", "Washer"],
-        "description":"This luxury home is nestled in the beautiful Fox Farm Estates. Only minutes to the lake, and ski slopes. Enjoy over 2700 sq feet of this beautiful corner lot home. Our home comfortably sleeps 14 guest, has a pool table and a large outdoor deck with plenty of seating and a beautiful outdoor BBQ. BBQ and outdoor couch not available during the winter"
+        "amenities": ["Wifi", "Free Parking", "TV", "Washer"],
+        "coordinates": {
+            "latitude": 34.25130013802624,
+            "longitude": -116.86947204807004
+        },
+        "description": "This luxury home is nestled in the beautiful Fox Farm Estates. Only minutes to the lake, and ski slopes. Enjoy over 2700 sq feet of this beautiful corner lot home. Our home comfortably sleeps 14 guest, has a pool table and a large outdoor deck with plenty of seating and a beautiful outdoor BBQ. BBQ and outdoor couch not available during the winter"
     }
 ]
