@@ -4,7 +4,7 @@ import Banner from '../components/Banner'
 import HouseCard from '../components/HouseCard'
 import Card from '../components/Card'
 
-import GoldRush720_1 from '../CabinPhotos/GoldRush720/GoldRush720-1.JPG'
+import House from '../CabinPhotos/Cabins/GoldRushSmall.JPG'
 import Hiking720 from '../CabinPhotos/City720/City720-1.JPG'
 import Village720 from '../CabinPhotos/City720/City720-2.JPG'
 
@@ -31,7 +31,7 @@ function Home() {
 
             <div className='home__section'>
                 <Card
-                    image1={GoldRush720_1}
+                    image1={House}
                     title="All Cabins"
                     link= "/cabins"
                     icon={<Icon icon={houseDoor} width="20" height="20" inline={true}/>}

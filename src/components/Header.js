@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import '../css/Header.css'
 import { Link } from "react-router-dom";
-import Logo from '../CabinPhotos/PinesCabinsLogo.png'
+import Logo from '../CabinPhotos/Logo.png'
 import Weather from '../components/Weather'
 import axios from 'axios';
 
@@ -29,19 +29,13 @@ function Header() {
     }, [])
 
 
-
-
-
-
-
-
     return (
         <div className='header'>
             <Link to='/'>
                 <img
                     className="header__icon"
                     src= {Logo}
-                    alt=""
+                    alt="Pines Cabins, Big Bear Lake, Cabin Management"
                 />
             </Link>
             <div className={'weatherRight'}>

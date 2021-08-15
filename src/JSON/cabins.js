@@ -1,9 +1,8 @@
-import PapaBear720_1 from '../CabinPhotos/PapaBear720/PapaBear720-1.JPG'
-import Scandia720_1 from '../CabinPhotos/Scandia720/Scandia720-1.JPG'
-import TreeHutte720_1 from '../CabinPhotos/TreeHutte720/TreeHutte720-24.JPG'
-import WhisperingPines720_1 from '../CabinPhotos/WhsiperingPines720/WhisperingPines720-1.JPG'
-import GoldRush720_1 from '../CabinPhotos/GoldRush720/GoldRush720-1.JPG'
-
+import PapaBear from '../CabinPhotos/Cabins/PapaBearSmall.JPG'
+import Scandia from '../CabinPhotos/Cabins/ScandiaSmall.JPG'
+import Pines from '../CabinPhotos/Cabins/PinesSmall.JPG'
+import TreeHut from '../CabinPhotos/Cabins/TreehutSmall.JPG'
+import GoldRush from '../CabinPhotos/Cabins/GoldRushSmall.JPG'
 
 export const cabins = [
     {
@@ -16,7 +15,7 @@ export const cabins = [
         "link": "https://airbnb.com/h/whispheringpines",
         "rating": 4.92,
         "reviews": 74,
-        "image1": WhisperingPines720_1,
+        "image1": Pines,
         "amenities": ["Wifi", "Free Parking", "TV", "Washer"],
         "coordinates": {
             "latitude": 34.24475949144142,
@@ -34,7 +33,7 @@ export const cabins = [
         "link": "https://airbnb.com/h/chaletscandia",
         "rating": 4.75,
         "reviews": 4,
-        "image1": Scandia720_1,
+        "image1": Scandia,
         "amenities": ["Wifi", "Free Parking", "TV", "Washer"],
         "coordinates": {
             "latitude": 34.24749574804766,
@@ -52,7 +51,7 @@ export const cabins = [
         "link": "https://airbnb.com/h/papabearcabin",
         "rating": 5.0,
         "reviews": 3,
-        "image1": PapaBear720_1,
+        "image1": PapaBear,
         "amenities": ["Wifi", "Free Parking", "TV", "Washer"],
         "coordinates": {
             "latitude": 34.24423426962682,
@@ -70,7 +69,7 @@ export const cabins = [
         "link": "https://airbnb.com/h/treehutte",
         "rating": 4.89,
         "reviews": 9,
-        "image1": TreeHutte720_1,
+        "image1": TreeHut,
         "amenities": ["Wifi", "Free Parking", "TV", "Washer"],
         "coordinates": {
             "latitude": 34.23293415254536,
@@ -88,7 +87,7 @@ export const cabins = [
         "link": "https://airbnb.com/h/goldrushlodge",
         "rating": 5.0,
         "reviews": 21,
-        "image1": GoldRush720_1,
+        "image1": GoldRush,
         "amenities": ["Wifi", "Free Parking", "TV", "Washer"],
         "coordinates": {
             "latitude": 34.25130013802624,
