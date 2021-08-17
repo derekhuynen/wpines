@@ -15,7 +15,7 @@ export default function Weather({data}) {
         <div className={'weatherContainers'} onClick={() => {
             openLink("https://www.bensweather.com/")
         }}>
-            {getIcon(data.weather[0].icon, 30)}
+            {getIcon(data.weather[0].icon, 25)}
             <h2 style={{display: 'inline'}}>{data.main.temp} ℉</h2>
         </div>
     )

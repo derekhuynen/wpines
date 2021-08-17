@@ -13,7 +13,7 @@ function Banner() {
                 <h4>
                     Big Bear Cabin Management Company
                 </h4>
-                <Button onClick={() => history.push('/search')} variant='outlined'>Contact Us</Button>
+                <Button onClick={() => history.push('/contact')} variant='outlined'>Contact Us</Button>
             </div>
         </div>
     )

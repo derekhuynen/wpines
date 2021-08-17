@@ -14,9 +14,9 @@
 
 .header__icon {
     object-fit: contain;
-    width: 150px;
+    width: 175px;
     height: auto;
-    margin-left: 20px;
+    margin-left: 10px;
     padding-top: 5px;
     padding-bottom: -5px;
 }
@@ -27,12 +27,5 @@
 }
 
 @media screen and (max-width: 480px) {
-    .header__icon {
-        object-fit: contain;
-        width: 150px;
-        height: auto;
-        margin-left: 20px;
-        padding-top: 5px;
-        padding-bottom: -5px;
-    }
+
 }

@@ -15,12 +15,18 @@
     transform: scale(1.07);
 }
 
-
-.card > img {
-    object-fit: fill;
-    min-width: 200px;
-    min-height: 200px;
+.imageDiv{
+  height: calc(100% - 55px);
     width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imageDiv > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
 }
 
 .card__info {
@@ -61,10 +67,10 @@
         cursor: pointer;
     }
     .card:hover {
-        transform: scale(1.05);
+        transform: scale(1.00);
     }
 
-    .card > img {
+    .imageDiv > img {
         display: none;
 
     }

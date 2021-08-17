@@ -9,6 +9,7 @@ import Weather from './components/Weather'
 import Cabins from './pages/Cabins'
 import Restaurants from './pages/Restaurants'
 import Activities from './pages/Activities'
+import Test from './pages/Test'
 
 function App() {
     return (
@@ -25,7 +26,12 @@ function App() {
 
                     <Route path="/weather" component={Weather}/>
 
+                    <Route path="/contact" component={Test}/>
+
                     <Route path="/" component={Home}/>
+
+
+
 
                 </Switch>
 
