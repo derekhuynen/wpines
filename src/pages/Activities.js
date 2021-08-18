@@ -2,6 +2,7 @@ import '../css/Test.css';
 import React from "react";
 import Map from '../components/Map'
 import {businesses} from '../JSON/businesses.js'
+import {yelp} from "../JSON/yelp";
 
 
 
@@ -29,7 +30,7 @@ const items = businesses.map((activity, index) => {
 
     return (
         <div key={index} className={'restaurant'} onClick={() => {
-            openLink(activity.url)
+            openLink(activity.link)
         }}>
             <div className={"restaurantImage"}>
                 <img className={"restaurantImg "} src={activity.image1} alt="Restaurant in Big Bear"/>
@@ -52,11 +53,10 @@ const items = businesses.map((activity, index) => {
     )
 })
 
-const center = {
-    lat: 34.24651450381265,
-    lng: -116.86896456863401
+const center =  {
+    lat: 34.23917082635063,
+    lng: -116.9122004384206
 }
-
 export default function Activities() {
 
     return (
@@ -68,7 +68,7 @@ export default function Activities() {
                 </div>
 
                 <div className={'right'}>
-
+                    <Map items={businesses} zoom={14} center={center} comp={"activities"}/>
                 </div>
             </div>
         </>

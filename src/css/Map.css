@@ -45,6 +45,9 @@
 .locationInfo_Bottom{
     padding: 5px;
     cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .locationInfo_Bottom > h2{

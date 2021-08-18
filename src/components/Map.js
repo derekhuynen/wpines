@@ -5,14 +5,17 @@ import locationIcon from '@iconify/icons-mdi/map-marker';
 import '../css/Map.css'
 import CabinSmall from './CabinSmall'
 import RestaurantSmall from "./RestaurantSmall";
+import ActivitiesSmall from './ActivitiesSmall'
 
 
 const LocationInfoBox = ({info, comp}) => {
-    if(comp === "cabin") {
+    if (comp === "cabin") {
         return <CabinSmall info={info}/>
-    } else if (comp === "restaurant"){
+    } else if (comp === "restaurant") {
         return <RestaurantSmall info={info}/>
-    }else{
+    } else if (comp === "activities") {
+        return <ActivitiesSmall info={info}/>
+    } else {
         return "";
     }
 
@@ -20,11 +23,11 @@ const LocationInfoBox = ({info, comp}) => {
 
 
 const AnyReactComponent = ({onClick}) => {
-    return(
+    return (
         <div className={'marker'} onClick={onClick}>
             <Icon className={"icon"} icon={locationIcon} color="red" width="25" height="25"/>
         </div>
-        )
+    )
 }
 
 
@@ -57,7 +60,9 @@ const Map = ({center, zoom, items, comp}) => {
                 }}
             >
                 {markers}
-                {locationInfo && <LocationInfoBox lat={locationInfo.coordinates.latitude} lng={locationInfo.coordinates.longitude} info={locationInfo} comp={comp}/>}
+                {locationInfo &&
+                <LocationInfoBox lat={locationInfo.coordinates.latitude} lng={locationInfo.coordinates.longitude}
+                                 info={locationInfo} comp={comp}/>}
             </GoogleMapReact>
 
         </div>
