@@ -1,10 +1,12 @@
 import '../css/Test.css';
-import React from "react";
+import React, {useState} from "react";
 import Map from '../components/Map'
 import {cabins} from '../JSON/cabins.js'
 import {Icon} from "@iconify/react";
 import starFilled from "@iconify/icons-ant-design/star-filled";
-
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
+import {getFilteredRows, filterTopic} from "../components/filter";
 
 
 function trimString(str) {
@@ -80,6 +82,18 @@ const center = {
 }
 
 export default function Cabins() {
+    const [displayData, setDisplayData] = useState(cabins);
+    const [target, setTarget] = useState("");
+
+    const topics = ["Bedrooms", "Bathrooms", "Beds", "Occupancy"]
+
+
+    const options = [
+        'one', 'two', 'three'
+    ];
+
+    const defaultOption = options[0];
+
 
     return (
 
@@ -90,6 +104,9 @@ export default function Cabins() {
 
 
                         <div className={'left'}>
+                            <Dropdown options={options} onChange={setTarget} value={defaultOption} placeholder="Select an option" />
+                            {console.log(filterTopic(cabins))}
+
                             {items}
                         </div>
 

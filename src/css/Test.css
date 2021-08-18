@@ -218,6 +218,40 @@
 }
 
 
+.topicsInline{
+    margin: 5px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topic{
+    flex: 0 0;
+    display: inline;
+    margin: 5px 3px;
+}
+
+.topic > h4{
+    border: 1px grey solid;
+    border-radius: 10px;
+    display: inline;
+    padding: 2px 3px;
+    background-color: lightgrey;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.search{
+
+    margin: 5px 20px;
+}
+.search > h4{
+    display: inline;
+    margin-right: 5px;
+}
+
+
 
 
 @media screen and (max-width: 1200px) {
