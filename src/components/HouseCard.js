@@ -26,7 +26,7 @@ function HouseCard(props) {
                 <div className={'houseCard__price'}>
                     <h2 style={{float: 'left'}}><Icon icon = {starFilled} color="#e61e4d" width="18" height="18" inline={true}/></h2>
                     <h3 style={{float: 'left'}}>{cabin.rating}</h3>
-                    <h4 style={{float: 'right'}}>License: {cabin.license}</h4>
+                    <h4 style={{float: 'right'}}>{cabin.license}</h4>
                 </div>
             </div>
         </div>

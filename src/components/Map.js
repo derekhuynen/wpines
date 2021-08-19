@@ -41,8 +41,9 @@ const Map = ({center, zoom, items, comp}) => {
                 lat={item.coordinates.latitude}
                 lng={item.coordinates.longitude}
                 text="My Marker"
-                onClick={() => {
+                onClick={(e) => {
                     setLocationInfo(item)
+                    console.log(e)
                 }}
             />
         )
