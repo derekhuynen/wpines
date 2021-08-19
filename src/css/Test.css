@@ -264,7 +264,7 @@
     flex: 0 0;
     display: flex;
     margin: 5px 20px;
-    border: 1px red solid;
+
 
 
 }
@@ -281,7 +281,7 @@
     flex: 1 0;
     font-size: 14px;
     padding: 0;
-    border: 1px red solid;
+
     margin-left: -10px
 }
 
