@@ -1,24 +1,25 @@
 
 
 
-export const getFilteredRows = (businesses, filterKey) => {
-    return businesses.businesses.filter((business) => {
-        return Object.values(business).some((s) =>{
+export const getFilteredRows = (data, filterKey) => {
+    console.log(data)
+    return data.filter((single) => {
+        return Object.values(single).some((s) =>{
                 return ("" + s).toLowerCase().includes(filterKey.toLowerCase())
             }
         );
     });
 };
 
-export const filterTopic = (businesses, topic, filterKey) => {
-    console.log(businesses)
-    return businesses.map((business) => {
-        console.log(business["title"]);
-        return 1;
+export const filterTopic = (data, topics, filterKey) => {
+    return data.filter((business) => {
 
+        if(typeof topics === 'string'){
+            return ("" + business[topics]).toLowerCase().includes(filterKey.toLowerCase())
+        }else{
+            return topics.some((topic) => {
+                return ("" + business[topic]).toLowerCase().includes(filterKey.toLowerCase())
+            })
+        }
     });
 };
-
-function getKeyByValue(object, value) {
-    return Object.keys(object).find(key => object[key] === value);
-}

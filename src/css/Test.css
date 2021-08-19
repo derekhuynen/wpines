@@ -235,6 +235,24 @@
     border-radius: 10px;
     display: inline;
     padding: 2px 3px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.topicHighLight{
+    flex: 0 0;
+    display: inline;
+    margin: 5px 3px;
+}
+
+.topicHighLight > h4{
+    border: 1px black solid;
+    border-radius: 10px;
+    display: inline;
+    padding: 2px 3px;
     background-color: lightgrey;
     font-size: 14px;
     font-weight: 500;
@@ -243,13 +261,41 @@
 
 
 .search{
-
+    flex: 0 0;
+    display: flex;
     margin: 5px 20px;
+    border: 1px red solid;
+
+
 }
 .search > h4{
     display: inline;
     margin-right: 5px;
 }
+
+.search > input{
+    display: inline;
+}
+
+.dropboxDiv{
+    flex: 1 0;
+    font-size: 14px;
+    padding: 0;
+    border: 1px red solid;
+    margin-left: -10px
+}
+
+
+.searchContainer {
+    display: flex;
+    width: 355px;
+    margin-top: 20px;
+    justify-content: left;
+    margin-left: 3px;
+}
+
+
+
 
 
 

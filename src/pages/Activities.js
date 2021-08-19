@@ -5,9 +5,6 @@ import {businesses} from '../JSON/businesses.js'
 import {getFilteredRows} from "../components/filter";
 
 
-
-
-
 function items2(topics) {
 
     return (
@@ -65,9 +62,39 @@ const center = {
 }
 export default function Activities() {
     const [displayData, setDisplayData] = useState(businesses);
-    const topics = ["Rentals", "Marina", "Activity", "Store", "Family" ]
+    const topics = [{key: "Rentals", value: "Rental"},{key: "Marina", value: "Marina"},{key: "Activities", value: "Activity"},{key: "Store", value: "Store"},{key: "Family", value: "Family"}];
+    const [selectedTopic, setSelectedTopic] = useState("");
 
 
+
+    function idk(topic, compare) {
+
+        if (topic.key.toString() === compare.toString()) {
+            return (
+                <div key={topic.value} className={"topicHighLight"} onClick={() => {onClickHandler(topic)}}>
+                    <h4>{topic.key}</h4>
+                </div>
+            )
+        } else {
+            return (
+                <div key={topic.value} className={"topic"} onClick={() => {onClickHandler(topic)}}>
+                    <h4>{topic.key}</h4>
+                </div>
+            )
+        }
+    }
+
+    const onClickHandler = (topic) => {
+        if(topic.key.toString() === selectedTopic.toString()){
+            setSelectedTopic("");
+
+        } else{
+            setDisplayData(getFilteredRows(businesses, topic.value));
+            setSelectedTopic(topic.key);
+        }
+
+
+    }
 
 
     return (
@@ -77,27 +104,22 @@ export default function Activities() {
                     <div className={"search"}>
                         <h4>Search</h4><input
                         onChange={(e) => {
-                            setDisplayData(getFilteredRows({businesses},e.target.value))
+                            setDisplayData(getFilteredRows(businesses, e.target.value))
                         }}
+                        placeholder={selectedTopic}
                     />
                     </div>
 
                     <div className={"topicsInline"}>
-                        <div key={"all"} className={"topic"} onClick= {() => {setDisplayData(businesses)}}>
-                            <h4>All</h4>
-                        </div>
-                        {topics.map((topic,index) => (
-                            <div key={topic} className={"topic"} onClick= {() => {setDisplayData(getFilteredRows({businesses}, topic))}}>
-                                <h4>{topic}</h4>
-                            </div>
+                        {topics.map((topic, index) => (
+                            idk(topic, selectedTopic)
                         ))}
                     </div>
-
                     {items(displayData)}
                 </div>
 
                 <div className={'right'}>
-                    <Map items={businesses} zoom={14} center={center} comp={"activities"}/>
+                    <Map items={displayData} zoom={14} center={center} comp={"activities"}/>
                 </div>
             </div>
         </>
