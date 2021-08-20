@@ -1,12 +1,12 @@
 import '../css/Test.css';
-import React, {useState} from "react";
+import React from "react";
 import Map from '../components/Map'
 import {cabins} from '../JSON/cabins.js'
 import {Icon} from "@iconify/react";
 import starFilled from "@iconify/icons-ant-design/star-filled";
-import Dropdown from 'react-dropdown';
+
 import 'react-dropdown/style.css';
-import {filterTopic} from "../components/filter";
+
 
 
 function trimString(str) {
@@ -83,50 +83,13 @@ const center = {
 }
 
 export default function Cabins() {
-    const [displayData, setDisplayData] = useState(cabins);
-    const [target, setTarget] = useState("All");
-    const [search, setSearch] = useState("");
-    const headers = ["title","guests","bedrooms","bathrooms","beds","amenities"]
-    const topics = ["All", "bedrooms", "bathrooms", "beds", "guests"]
-    const defaultOption = topics[0];
-
-
-    const idk = (temp)=>  {
-        if(temp.toString() === "All"){
-            return headers;
-        }else{
-            return temp.toString();
-        }
-    }
-
-
-    const handleChange = (option) => {
-        setTarget(option.value)
-        setDisplayData(filterTopic(cabins,idk(option.value), search))
-    }
-
 
     return (
         <>
             <div className={'container'}>
                 <div className={'left'}>
-                    <div className={"searchContainer"}>
-                        <div className={"search"}>
-                            <h4>Search</h4>
-                            <input
-                                onChange={(e) => {
-                                    setSearch(e.target.value)
-                                    setDisplayData(filterTopic(cabins,idk(target), search))
-                                }}
-                                placeholder={""}
-                            />
-                        </div>
-                        <div className={"dropboxDiv"}>
-                            <Dropdown options={topics} onChange={handleChange} value={defaultOption}
-                                      placeholder="Select an option"/>
-                        </div>
-                    </div>
-                    {items(displayData)}
+
+                    {items(cabins)}
                 </div>
                 <div className={'right'}>
                     <Map center={center} items={cabins} comp={"cabin"}/>

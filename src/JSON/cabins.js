@@ -5,6 +5,7 @@ import TreeHut from '../CabinPhotos/Cabins/TreehutSmall.JPG'
 import GoldRush from '../CabinPhotos/Cabins/GoldRushSmall.JPG'
 import BearHaven from '../CabinPhotos/Cabins/BearHavenSmall.jpg'
 import Apple from '../CabinPhotos/Cabins/AppleSmall.jpg'
+import Cozy from '../CabinPhotos/Cabins/CozyFamilyChaletSmall.jpg'
 
 export const cabins = [
     {
@@ -132,5 +133,22 @@ export const cabins = [
             "longitude": -116.89731739763288
         },
         "description": "One of the best locations in Big Bear! A quiet street you can walk to the lake, 1 min drive to the parking of Snow Summit; 3 min drive to the Village. A newly renovated house with comfortable sleeping for up to 7 guests. Large private front/back yards surround the house making a great play area for kids, dogs, or a place to relax. Walk to the end of the street to arrive at Meadows Park-with a playground, Dog Park, and sport court. A long driveway that can accommodate 3 cars or your boat/Jet Ski"
-    }
+    },
+    {
+        "title": "Cozy Family Chalet",
+        "guests": 4,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "beds": 3,
+        "license": "2021-3517",
+        "link": "https://airbnb.com/h/coyotegrovechalet-bigbearlake",
+        "rating": 4.94,
+        "reviews": 79,
+        "image1": Cozy,
+        "amenities": ["Yard", "Fire Pit", "Ski Slopes View"],
+        "coordinates": {
+            "latitude": 34.23864618255712,
+            "longitude": -116.8644663667726
+        },
+        "description": "Coyote Grove is a Mountain Chalet located in lower Moonridge, which is the premier neighborhood in Big Bear Lake. It is located on a very quiet and flat street with a straight driveway which makes accessibility easy in the winter months. Enjoy the ski slope views of Bear Mountain from the back patio. Only 2 minutes to the slopes, 5 minutes to Big Bear Village (shopping, dining, entertainment), and 5 minutes to Big Bear Lake for fishing, boating, and swimming. Relax and enjoy the Mountains!"}
 ]
