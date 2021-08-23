@@ -30,9 +30,6 @@ function App() {
 
                     <Route path="/" component={Home}/>
 
-
-
-
                 </Switch>
 
                 <Footer/>
