@@ -10,6 +10,7 @@ import Cabins from './pages/Cabins'
 import Restaurants from './pages/Restaurants'
 import Activities from './pages/Activities'
 import Test from './pages/Test'
+import OctoberFest from './pages/OctoberFestPage'
 
 function App() {
     return (
@@ -27,6 +28,8 @@ function App() {
                     <Route path="/weather" component={Weather}/>
 
                     <Route path="/contact" component={Test}/>
+
+                    <Route path="/holiday" component={OctoberFest}/>
 
                     <Route path="/" component={Home}/>
 

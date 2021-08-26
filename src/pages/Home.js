@@ -14,6 +14,7 @@ import iRestaurant from '@iconify/icons-medical-icon/i-restaurant';
 import houseDoor from '@iconify/icons-bi/house-door';
 
 import {cabins} from '../JSON/cabins'
+import OctoberFest from "../components/Banners/Octoberfest";
 
 
 function Home() {
@@ -28,6 +29,7 @@ function Home() {
     return (
         <div className='home'>
             <Banner/>
+            <OctoberFest/>
 
             <div className='home__section'>
                 <Card
