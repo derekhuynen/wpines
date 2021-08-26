@@ -32,7 +32,7 @@ const AnyReactComponent = ({onClick}) => {
 
 
 const Map = ({center, zoom, items, comp}) => {
-    const [locationInfo, setLocationInfo] = useState(null)
+    const [locationInfo, setLocationInfo] = useState(items[0])
 
     const markers = items.map((item, index) => {
         return (

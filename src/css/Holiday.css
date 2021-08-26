@@ -1,6 +1,5 @@
 .holiday-page-container{
     background-color: lightgrey;
-
 }
 
 
@@ -61,10 +60,25 @@
     width: 100%;
     min-height: calc(100vh - 300px - 101px);
     background-color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.holiday-content-left{
+    flex: 0 1 60%;
+    min-width: 600px;
+
+}
+.holiday-content-right{
+    flex: 1 1 40%;
+    min-width: 400px;
+    max-width: 600px;
 }
 
 .holiday-content{
-    outline: 1px black solid;
     padding: 30px;
 
 }
@@ -81,4 +95,50 @@
 .holiday-content > p{
     margin-bottom: 15px;
 
+}
+
+.holiday-info-right{
+    border: 1px black solid;
+    border-radius: 15px;
+    height: auto;
+    width: calc(95% - 20px);
+    padding: 10px;
+    margin:  7px auto;
+
+}
+.holiday-info-right-inner{
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 15px;
+    margin-top: 15px;
+
+}
+
+
+.holiday-button-div{
+
+    width: fit-content;
+    margin: 40px auto 20px;
+}
+
+.holiday-button-div > button{
+    padding: 5px 10px;
+    font-size: 25px;
+    background-color: #ff7779;
+    border: 1px rgba(175,1,0,1) solid;
+    border-radius: 5px;
+}
+
+.holiday-button-div > button:hover{
+    font-size: 25px;
+    background-color: rgba(200,0,0,1);
+    border: 1px white solid;
+}
+
+
+.holiday-map{
+    margin: auto auto;
+    max-width: 1500px;
+    width: 95%;
+    height: 400px;
 }
