@@ -29,7 +29,6 @@ function Home() {
     return (
         <div className='home'>
             <Banner/>
-            <OctoberFest/>
 
             <div className='home__section'>
                 <Card
