@@ -6,8 +6,64 @@ import GoldRush from '../CabinPhotos/Cabins/GoldRushSmall.JPG'
 import BearHaven from '../CabinPhotos/Cabins/BearHavenSmall.jpg'
 import Apple from '../CabinPhotos/Cabins/AppleSmall.jpg'
 import Cozy from '../CabinPhotos/Cabins/CozyFamilyChaletSmall.jpg'
+import WinterLand from '../CabinPhotos/Cabins/WinterLandSmall.jpg'
+import FireSide from '../CabinPhotos/Cabins/FireSideSmall.jpg'
+import Holiday from '../CabinPhotos/Cabins/HolidaySmall.jpeg'
 
 export const cabins = [
+    {
+        "title": "Winterland Cottage",
+        "guests": 5,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "beds": 2,
+        "license": "2021-1689",
+        "link": "https://airbnb.com/h/winterlandcottage",
+        "rating": 5.0,
+        "reviews": 0,
+        "image1": WinterLand,
+        "amenities": ["Spa", "EV", "Pet Friendly"],
+        "coordinates": {
+            "latitude": 34.2473977699488,
+            "longitude": -116.87863426836218
+        },
+        "description": "Winterland Cottage is your ultimate mountain getaway. This 920 sq foot cabin is nestled in one of the most desirable mountain neighborhoods of Big Bear Lake.  Enjoy the magnificent 9000+ sq foot completely fenced yard with spa, covered deck and BBQ. We have a newly installed Level 2 charger."},
+    {
+        "title": "FireSide Manor",
+        "guests": 10,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "beds": 6,
+        "license": "2021-0730",
+        "link": "https://airbnb.com/h/firesidemanor",
+        "rating": 5.0,
+        "reviews": 0,
+        "image1": FireSide,
+        "amenities": ["Spa", "Arcade Games", "2 Fire Places"],
+        "coordinates": {
+            "latitude": 34.24741345796797,
+            "longitude": -116.87822867807218
+        },
+        "description": "Welcome to the Fireside Manor! 2500 Sq Ft. 3 Bedrooms, 2 Bathrooms with a flat lot. Great location in the Fox Farm area, close to slopes, grocery stores, and our favorite, MoonRidge Coffee Company. This is our family's new Airbnb but we have another one in San Diego with over 150 - 5 star reviews. Like with our San Diego Airbnb, we have taken exception care to ensure Fireside Manor is set up for an amazing stay!"
+    },
+    {
+        "title": "Holiday Monk",
+        "guests": 10,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "beds": 7,
+        "license": "2021-5796",
+        "link": "https://airbnb.com/h/holidaymonk",
+        "rating": 5.0,
+        "reviews": 1,
+        "image1": Holiday,
+        "amenities": ["Spa", "Pool Table", "85\" TV"],
+        "coordinates": {
+            "latitude": 34.2467577356048,
+            "longitude": -116.87650216062852
+        },
+        "description": "Feel at home in this one of a kind Big Bear Cabin. This is a recently remodeled contemporary chalet in the desirable Fox Farm neighborhood. This mid-century cabin has a vaulted ceiling living room with access to a large deck. A game room is located downstairs and a 85\" 4K Smart TV is in the living room and a 65\" 4K Smart TV is in the master bedroom. Basic Cable is also provided. Stay in this quiet and secluded cul-de-sac that is only 2 minutes from all the main supermarkets in Big Bear."
+    },
     {
         "title": "Whispering Pines",
         "guests": 4,
@@ -16,8 +72,8 @@ export const cabins = [
         "beds": 2,
         "license": "2019-0210",
         "link": "https://airbnb.com/h/whispheringpines",
-        "rating": 4.92,
-        "reviews": 74,
+        "rating": 4.91,
+        "reviews": 80,
         "image1": Pines,
         "amenities": ["Fast Wifi", "BBQ", "Patio"],
         "coordinates": {
@@ -34,8 +90,8 @@ export const cabins = [
         "beds": 5,
         "license": "2021-0150",
         "link": "https://airbnb.com/h/chaletscandia",
-        "rating": 4.75,
-        "reviews": 4,
+        "rating": 4.90,
+        "reviews": 10,
         "image1": Scandia,
         "amenities": ["BBQ", "Pool Table", "Arcade", "Washer/Dryer"],
         "coordinates": {
@@ -53,7 +109,7 @@ export const cabins = [
         "license": "2021-0078",
         "link": "https://airbnb.com/h/papabearcabin",
         "rating": 5.0,
-        "reviews": 3,
+        "reviews": 5,
         "image1": PapaBear,
     "amenities": ["Washer/Dryer", "Patio", "BBQ", "Fast Wifi"],
         "coordinates": {
@@ -70,8 +126,8 @@ export const cabins = [
         "beds": 6,
         "license": "2021-0073",
         "link": "https://airbnb.com/h/treehutte",
-        "rating": 4.89,
-        "reviews": 9,
+        "rating": 4.94,
+        "reviews": 17,
         "image1": TreeHut,
         "amenities": ["Fast Wifi", "Record Player", "Patio"],
         "coordinates": {
@@ -89,7 +145,7 @@ export const cabins = [
         "license": "2020-0381",
         "link": "https://airbnb.com/h/goldrushlodge",
         "rating": 5.0,
-        "reviews": 21,
+        "reviews": 29,
         "image1": GoldRush,
         "amenities": ["Patio", "BBQ", "Washer/Dryer", "Pool Table"],
         "coordinates": {
@@ -107,7 +163,7 @@ export const cabins = [
     "license": "376-CA20140284",
     "link": "https://www.houfy.com/lodging/bear-haven-cabin/1474",
     "rating": 5.0,
-    "reviews": 62,
+    "reviews": 70,
     "image1": BearHaven,
     "amenities": ["Arcade", "55\" 4k TV", "Washer/Dryer"],
     "coordinates": {
@@ -124,8 +180,8 @@ export const cabins = [
         "beds": 5,
         "license": "2020-0439",
         "link": "https://www.airbnb.com/h/appletreecottagebigbear",
-        "rating": 4.88,
-        "reviews": 24,
+        "rating": 4.90,
+        "reviews": 29,
         "image1": Apple,
         "amenities": ["BBQ", "Dog Friendly", "Washer/Dryer"],
         "coordinates": {
@@ -143,7 +199,7 @@ export const cabins = [
         "license": "2021-3517",
         "link": "https://airbnb.com/h/coyotegrovechalet-bigbearlake",
         "rating": 4.94,
-        "reviews": 79,
+        "reviews": 85,
         "image1": Cozy,
         "amenities": ["Yard", "Fire Pit", "Ski Slopes View"],
         "coordinates": {
