@@ -20,6 +20,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "aws-sdk": "^2.966.0",
+    "axios": "^0.21.1",
     "google-map-react": "^2.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -60,7 +61,7 @@
     "@iconify/icons-mdi": "^1.1.18",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "axios": "^0.21.4",
+    "axios": "^0.21.1",
     "google-map-react": "^2.1.10",
     "react-router-dom": "^5.2.0"
   }
