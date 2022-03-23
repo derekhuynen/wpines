@@ -22,32 +22,32 @@ const LocationInfoBox = ({info, comp}) => {
 }
 
 
-const AnyReactComponent = ({onClick}) => {
-    return (
-        <div className={'marker'} onClick={onClick}>
-            <Icon className={"icon"} icon={locationIcon} color="red" width="25" height="25"/>
-        </div>
-    )
-}
+// const AnyReactComponent = ({onClick}) => {
+//     return (
+//         <div className={'marker'} onClick={onClick}>
+//             <Icon className={"icon"} icon={locationIcon} color="red" width="25" height="25"/>
+//         </div>
+//     )
+// }
 
 
 const Map = ({center, zoom, items, comp}) => {
     const [locationInfo, setLocationInfo] = useState(items[0])
 
-    const markers = items.map((item, index) => {
-        return (
-            <AnyReactComponent
-                key={index}
-                lat={item.coordinates.latitude}
-                lng={item.coordinates.longitude}
-                text="My Marker"
-                onClick={(e) => {
-                    setLocationInfo(item)
-                    console.log(e)
-                }}
-            />
-        )
-    });
+    // const markers = items.map((item, index) => {
+    //     return (
+    //         <AnyReactComponent
+    //             key={index}
+    //             lat={item.coordinates.latitude}
+    //             lng={item.coordinates.longitude}
+    //             text="My Marker"
+    //             onClick={(e) => {
+    //                 setLocationInfo(item)
+    //                 console.log(e)
+    //             }}
+    //         />
+    //     )
+    // });
 
     return (
         <div className="map">
@@ -60,7 +60,7 @@ const Map = ({center, zoom, items, comp}) => {
                     console.log(ev)
                 }}
             >
-                {markers}
+                {/*{markers}*/}
                 {locationInfo &&
                 <LocationInfoBox lat={locationInfo.coordinates.latitude} lng={locationInfo.coordinates.longitude}
                                  info={locationInfo} comp={comp}/>}
