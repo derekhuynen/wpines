@@ -20,7 +20,7 @@ export const cabins = [
         "license": "2021-1689",
         "link": "https://airbnb.com/h/winterlandcottage",
         "rating": 5.0,
-        "reviews": 17,
+        "reviews": 0,
         "image1": WinterLand,
         "amenities": ["Spa", "EV", "Pet Friendly"],
         "coordinates": {
@@ -37,7 +37,7 @@ export const cabins = [
         "license": "2021-0730",
         "link": "https://airbnb.com/h/firesidemanor",
         "rating": 5.0,
-        "reviews": 11,
+        "reviews": 0,
         "image1": FireSide,
         "amenities": ["Spa", "Arcade Games", "2 Fire Places"],
         "coordinates": {
@@ -72,8 +72,8 @@ export const cabins = [
         "beds": 2,
         "license": "2019-0210",
         "link": "https://airbnb.com/h/whispheringpines",
-        "rating": 4.92,
-        "reviews": 88,
+        "rating": 4.91,
+        "reviews": 80,
         "image1": Pines,
         "amenities": ["Fast Wifi", "BBQ", "Patio"],
         "coordinates": {
@@ -90,8 +90,8 @@ export const cabins = [
         "beds": 5,
         "license": "2021-0150",
         "link": "https://airbnb.com/h/chaletscandia",
-        "rating": 4.84,
-        "reviews": 19,
+        "rating": 4.90,
+        "reviews": 10,
         "image1": Scandia,
         "amenities": ["BBQ", "Pool Table", "Arcade", "Washer/Dryer"],
         "coordinates": {
@@ -109,7 +109,7 @@ export const cabins = [
         "license": "2021-0078",
         "link": "https://airbnb.com/h/papabearcabin",
         "rating": 5.0,
-        "reviews": 11,
+        "reviews": 5,
         "image1": PapaBear,
     "amenities": ["Washer/Dryer", "Patio", "BBQ", "Fast Wifi"],
         "coordinates": {
@@ -126,8 +126,8 @@ export const cabins = [
         "beds": 6,
         "license": "2021-0073",
         "link": "https://airbnb.com/h/treehutte",
-        "rating": 4.96,
-        "reviews": 28,
+        "rating": 4.94,
+        "reviews": 17,
         "image1": TreeHut,
         "amenities": ["Fast Wifi", "Record Player", "Patio"],
         "coordinates": {
@@ -145,7 +145,7 @@ export const cabins = [
         "license": "2020-0381",
         "link": "https://airbnb.com/h/goldrushlodge",
         "rating": 5.0,
-        "reviews": 35,
+        "reviews": 29,
         "image1": GoldRush,
         "amenities": ["Patio", "BBQ", "Washer/Dryer", "Pool Table"],
         "coordinates": {
@@ -180,8 +180,8 @@ export const cabins = [
         "beds": 5,
         "license": "2020-0439",
         "link": "https://www.airbnb.com/h/appletreecottagebigbear",
-        "rating": 4.93,
-        "reviews": 40,
+        "rating": 4.90,
+        "reviews": 29,
         "image1": Apple,
         "amenities": ["BBQ", "Dog Friendly", "Washer/Dryer"],
         "coordinates": {
