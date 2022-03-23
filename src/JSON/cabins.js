@@ -9,6 +9,9 @@ import Cozy from '../CabinPhotos/Cabins/CozyFamilyChaletSmall.jpg'
 import WinterLand from '../CabinPhotos/Cabins/WinterLandSmall.jpg'
 import FireSide from '../CabinPhotos/Cabins/FireSideSmall.jpg'
 import Holiday from '../CabinPhotos/Cabins/HolidaySmall.jpeg'
+import Poplar from '../CabinPhotos/Cabins/poplar.jpeg'
+import Division from '../CabinPhotos/Cabins/division.png'
+import Wolf2 from '../CabinPhotos/Cabins/Wolf2.png'
 
 export const cabins = [
     {
@@ -28,6 +31,61 @@ export const cabins = [
             "longitude": -116.87863426836218
         },
         "description": "Winterland Cottage is your ultimate mountain getaway. This 920 sq foot cabin is nestled in one of the most desirable mountain neighborhoods of Big Bear Lake.  Enjoy the magnificent 9000+ sq foot completely fenced yard with spa, covered deck and BBQ. We have a newly installed Level 2 charger."},
+    {
+        "title": "Stunning 3BR/2BA",
+        "guests": 7,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "beds": 5,
+        "license": "2021-0561",
+        "link": "https://airbnb.com/h/poplarcottageretreat",
+        "rating": 5.0,
+        "reviews": 22,
+        "image1": Poplar,
+        "amenities": ["Spa", "EV", "Pet Friendly"],
+        "coordinates": {
+            "latitude": 34.24955430003205,
+            "longitude": -116.86836627039685
+        },
+        "description": "Enjoy a perfect family getaway in this stunning cottage in a quiet, central Foxfarm neighborhood. The one-story home boasts 1500 sq of space with gorgeous living areas, 3 spacious bedrooms, 2 elegant bathrooms, and fun outdoor entertainment including a hot tub and large decks. You will be close to all Big Bear has to offer - hiking trails, the zoo, ski resorts, The Village, and more."},
+
+    {
+        "title": "Pine View Cabin",
+        "guests": 8,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "beds": 6,
+        "license": "2021-0000",
+        "link": "https://airbnb.com/h/pineviewcabinbigbear",
+        "rating": 5.0,
+        "reviews": 0,
+        "image1": Division,
+        "amenities": ["Spa", "Foosball", "Pet Friendly"],
+        "coordinates": {
+            "latitude": 34.25305843293139,
+            "longitude": -116.86652131538908
+        },
+        "description": "Welcome to Pine View Cabin! Your vacation begins with a scenic drive up the hill. Located on the eastern edge of Big Bear Lake, access from Hwy 38 avoids most traffic congestion. Central to everything Big Bear while affording guests a quiet home away from home. Fully fenced backyard. Inviting open floor plan for family and friends. Includes complimentary coffee, tea, hot chocolate and oatmeal. Stackable washer and dryer. Master suite with dedicated work space and sparkling clean indoor hot tub."},
+
+    {
+        "title": "Wolf Lodge",
+        "guests": 4,
+        "bedrooms": 2,
+        "bathrooms": 3,
+        "beds": 2,
+        "license": "2022-0020",
+        "link": "https://airbnb.com/h/big-bear-lake-cabin",
+        "rating": 4.87,
+        "reviews": 219,
+        "image1": Wolf2,
+        "amenities": ["A-Frame", "Spa Tub", "Pet Friendly"],
+        "coordinates": {
+            "latitude": 34.23510314345496,
+            "longitude": -116.85153035759032
+        },
+        "description": "Get cozy in the loft swing and watch birds at the terrace feeder below. Surrounded by pines and junipers, this hillside home has great views and a retro-modern feel. Stained glass windows, a hand-carved fire mantel, and a Jacuzzi tub with a view of the slopes are just a few of the highlights."},
+
+
     {
         "title": "FireSide Manor",
         "guests": 10,
@@ -163,7 +221,7 @@ export const cabins = [
     "license": "376-CA20140284",
     "link": "https://www.houfy.com/lodging/bear-haven-cabin/1474",
     "rating": 5.0,
-    "reviews": 70,
+    "reviews": 78,
     "image1": BearHaven,
     "amenities": ["Arcade", "55\" 4k TV", "Washer/Dryer"],
     "coordinates": {
@@ -199,7 +257,7 @@ export const cabins = [
         "license": "2021-3517",
         "link": "https://airbnb.com/h/coyotegrovechalet-bigbearlake",
         "rating": 4.94,
-        "reviews": 85,
+        "reviews": 97,
         "image1": Cozy,
         "amenities": ["Yard", "Fire Pit", "Ski Slopes View"],
         "coordinates": {
