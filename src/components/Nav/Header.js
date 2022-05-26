@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
-import '../css/Header.css'
+import '../../css/Header.css'
 import { Link } from "react-router-dom";
-import Logo from '../CabinPhotos/Logo.png'
-import Weather from '../components/Weather'
+import Logo from '../../CabinPhotos/Logo.png'
+import Weather from '../Weather/Weather'
 import axios from 'axios';
 
 

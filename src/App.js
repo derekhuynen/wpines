@@ -2,15 +2,16 @@ import React from "react";
 import './css/App.css';
 
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Header from './components/Header'
-import Home from './pages/Home'
-import Footer from './components/Footer'
-import Weather from './components/Weather'
-import Cabins from './pages/Cabins'
-import Restaurants from './pages/Restaurants'
-import Activities from './pages/Activities'
-import Test from './pages/Test'
-import OctoberFest from './pages/OctoberFestPage'
+import Header from './components/Nav/Header'
+import Home from './components/Home/Home'
+import Footer from './components/Nav/Footer'
+import Weather from './components/Weather/Weather'
+import Cabins from './components/Cabin/Cabins'
+import Restaurants from './components/Restaurant/Restaurants'
+import Activities from './components/Activities/Activities'
+import Contact from './components/Contact'
+import OctoberFest from './components/Holiday/OctoberFestPage'
+import Cabin from "./components/Cabin/Cabin.js";
 
 function App() {
     return (
@@ -27,9 +28,13 @@ function App() {
 
                     <Route path="/weather" component={Weather}/>
 
-                    <Route path="/contact" component={Test}/>
+                    <Route path="/contact" component={Contact}/>
 
                     <Route path="/holiday" component={OctoberFest}/>
+
+                    <Route path="/holiday" component={OctoberFest}/>
+
+npm,
 
                     <Route path="/" component={Home}/>
 

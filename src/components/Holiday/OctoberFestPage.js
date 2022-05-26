@@ -1,8 +1,8 @@
 import React from 'react'
-import bannerPic from "../CabinPhotos/BigBearBanner/Octoberfest Banner.png";
-import '../css/Holiday.css'
-import Map from "../components/Map";
-import image from '../CabinPhotos/icon.png'
+import bannerPic from "../../CabinPhotos/BigBearBanner/Octoberfest Banner.png";
+import '../../css/Holiday.css'
+import Map from "../Map";
+import image from '../../CabinPhotos/icon.png'
 
 
 

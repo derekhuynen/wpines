@@ -5,7 +5,7 @@ import Email from "../CabinPhotos/Email.png"
 import Phone from "../CabinPhotos/Phone.png"
 
 
-export default function Test() {
+export default function Contact() {
 
     return (
 

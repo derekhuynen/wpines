@@ -1,28 +1,41 @@
-import React from 'react';
-import '../css/Home.css';
-import Banner from '../components/Banner'
-import HouseCard from '../components/HouseCard'
-import Card from '../components/Card'
+import React, {useEffect, useState} from 'react';
+import '../../css/Home.css';
+import Banner from '../Nav/Banner'
+import HouseCard from './HouseCard'
+import Card from './Card'
 
-import House from '../CabinPhotos/Cabins/GoldRushSmall.JPG'
-import Hiking from '../CabinPhotos/City720/Hiking.JPG'
-import Village from '../CabinPhotos/City720/Village.JPG'
+import House from '../../CabinPhotos/Cabins/GoldRushSmall.JPG'
+import Hiking from '../../CabinPhotos/City720/Hiking.JPG'
+import Village from '../../CabinPhotos/City720/Village.JPG'
 
 import { Icon } from '@iconify/react';
 import baselineHiking from '@iconify/icons-ic/baseline-hiking';
 import iRestaurant from '@iconify/icons-medical-icon/i-restaurant';
 import houseDoor from '@iconify/icons-bi/house-door';
 
-import {cabins} from '../JSON/cabins'
+import axios from "axios";
 
 
 
 function Home() {
+    const [cabinList, setCabinList] = useState([])
+
+    useEffect(() => {
+        axios.get("http://localhost:3001/api/cabin")
+            .then(res => {
+                console.log(res.data);
+                setCabinList(res.data.item)
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+    }, [])
 
 
-    const items = cabins.map((cabin,index) => {
+
+    const items = cabinList.map((cabin,index) => {
         return(
-            <HouseCard key={index} cabin={cabin} />
+            <HouseCard cabin={cabin} key={index}/>
         )
     })
 
@@ -50,9 +63,11 @@ function Home() {
                     icon={<Icon icon={iRestaurant} width="20" height="20" inline={true}/>}
                 />
             </div>
+            {cabinList ?
             <div className='home__section'>
                 {items}
             </div>
+                : "Loading"}
         </div>
     )
 }

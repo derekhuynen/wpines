@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/Weather.css'
+import '../../css/Weather.css'
 import {getIcon} from './iconsMap'
 
 

@@ -1,7 +1,7 @@
-import '../css/Test.css';
+import '../../css/Test.css';
 import React from "react";
-import Map from '../components/Map'
-import {yelp} from '../JSON/yelp.js'
+import Map from '../Map'
+import {yelp} from '../../JSON/yelp.js'
 import StarRatings from 'react-star-ratings';
 
 

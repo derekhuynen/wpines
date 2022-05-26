@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 function openLink(link) {
     window.open(link)
 }

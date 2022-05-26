@@ -3,9 +3,9 @@ import GoogleMapReact from 'google-map-react'
 import {Icon} from '@iconify/react';
 import locationIcon from '@iconify/icons-mdi/map-marker';
 import '../css/Map.css'
-import CabinSmall from './CabinSmall'
-import RestaurantSmall from "./RestaurantSmall";
-import ActivitiesSmall from './ActivitiesSmall'
+import CabinSmall from './Cabin/CabinSmall'
+import RestaurantSmall from "./Restaurant/RestaurantSmall";
+import ActivitiesSmall from './Activities/ActivitiesSmall'
 
 
 const LocationInfoBox = ({info, comp}) => {
@@ -65,7 +65,6 @@ const Map = ({center, zoom, items, comp}) => {
                 <LocationInfoBox lat={locationInfo.coordinates.latitude} lng={locationInfo.coordinates.longitude}
                                  info={locationInfo} comp={comp}/>}
             </GoogleMapReact>
-
         </div>
     )
 }

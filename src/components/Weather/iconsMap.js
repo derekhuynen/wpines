@@ -1,4 +1,4 @@
-import svgIcons from '../JSON/svgIcons';
+import svgIcons from '../../JSON/svgIcons';
 import { Icon } from '@iconify/react';
 import sunnyOutline from '@iconify/icons-ion/sunny-outline';
 import partlySunnyOutline from '@iconify/icons-ion/partly-sunny-outline';

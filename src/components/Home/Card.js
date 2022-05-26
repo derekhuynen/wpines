@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Card.css'
+import '../../css/Card.css'
 import { useHistory } from "react-router-dom";
 
 function HouseCard({image1, title, icon, link}) {
