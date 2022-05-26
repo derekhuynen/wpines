@@ -77,7 +77,7 @@ export default function Contact() {
                         <img src={Phone} alt={"Phone Logo"}/>
                     </div>
                     <div className={"infoBoxLower"}>
-                        <h3>(714) 333-6783</h3>
+                        <h3>(949) 412-4501</h3>
                     </div>
                 </div>
 

@@ -4,10 +4,12 @@ import Map from '../Map'
 import {cabins} from '../../JSON/cabins.js'
 import {Icon} from "@iconify/react";
 import starFilled from "@iconify/icons-ant-design/star-filled";
-import photo from '../../CabinPhotos/Cabins/HolidaySmall.jpeg'
+
 
 import 'react-dropdown/style.css';
-import axios from "axios";
+
+
+//import axios from "axios";
 
 
 function trimString(str) {
@@ -46,35 +48,37 @@ export default function Cabins() {
     const [cabinList, setCabinList] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3001/api/cabin")
-            .then(res => {
-                console.log(res.data.item);
-                setCabinList(res.data.item)
-            })
-            .catch(function (error) {
-                console.log(error);
-            })
+
+        setCabinList(cabins)
+        // axios.get("http://localhost:3001/api/cabin")
+        //     .then(res => {
+        //         console.log(res.data.item);
+        //         setCabinList(res.data.item)
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error);
+        //     })
     }, [])
 
 
     const displayCabins = cabinList.map((cabin, index) => {
         return (
 
-            <div key={index} className={'cabin'} onClick={() => openLink(cabin.url)}>
+            <div key={index} className={'cabin'} onClick={() => openLink(cabin.link)}>
 
                 <div className={"cabinImage"}>
-                    <img src={photo} alt={cabin.cabinName}/>
+                    <img src={cabin.image1} alt={cabin.title}/>
                 </div>
 
                 <div className={'cabinInfo'}>
                     <div className={'cabinTop'}>
-                        <h2>{cabin.cabinName}</h2>
+                        <h2>{cabin.title}</h2>
 
                         {cabin.rating ?
                             <div className={'houseRating'}>
                                 <Icon icon={starFilled} color="#e61e4d" width="18" height="18" inline={true}/>
-                                <h5 className={"gray"}>({cabin.rating.overallCount} reviews)</h5>
-                                <h5>{cabin.rating.overallRating}</h5>
+                                <h5 className={"gray"}>({cabin.rating} reviews)</h5>
+                                <h5>{cabin.rating.reviews}</h5>
                             </div>
                             : ""
                         }

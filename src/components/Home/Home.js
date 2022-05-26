@@ -13,22 +13,28 @@ import baselineHiking from '@iconify/icons-ic/baseline-hiking';
 import iRestaurant from '@iconify/icons-medical-icon/i-restaurant';
 import houseDoor from '@iconify/icons-bi/house-door';
 
-import axios from "axios";
+import {cabins} from '../../JSON/cabins.js'
+
+
+//import axios from "axios";
 
 
 
 function Home() {
     const [cabinList, setCabinList] = useState([])
 
+
     useEffect(() => {
-        axios.get("http://localhost:3001/api/cabin")
-            .then(res => {
-                console.log(res.data);
-                setCabinList(res.data.item)
-            })
-            .catch(function (error) {
-                console.log(error);
-            })
+        setCabinList(cabins)
+
+        // axios.get("http://localhost:3001/api/cabin")
+        //     .then(res => {
+        //         console.log(res.data);
+        //         setCabinList(res.data.item)
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error);
+        //     })
     }, [])
 
 
